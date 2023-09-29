@@ -37,7 +37,15 @@ public class UIAlign : MonoBehaviour
     RectTransform rec;
     public void OnValidate()
     {
-        StartCoroutine(initUI());
+        try
+        {
+            StartCoroutine(initUI());
+        }
+        catch (System.Exception)
+        {
+
+            throw;
+        }
     }
 
     private void OnEnable()
