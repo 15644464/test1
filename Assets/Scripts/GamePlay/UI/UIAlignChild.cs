@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEditor;
 using UnityEngine;
+using EnumData;
 /// <summary>
 /// 对齐类
 /// </summary>

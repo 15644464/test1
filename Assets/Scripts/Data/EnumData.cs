@@ -11,4 +11,14 @@ namespace EnumData {
         Up_down,
         NoChange,
     }
+
+    public enum UIAlignmentType
+    {
+        Up,
+        Down,
+        Left,
+        Right,
+        UpDown,
+        LeftRight,
+    }
 }

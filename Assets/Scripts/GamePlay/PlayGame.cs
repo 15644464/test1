@@ -54,7 +54,9 @@ public class PlayGame : MonoBehaviour
 
     public string timeText(int num)
     {
-        string str =$"{time/60}:{time%60}";
+        var a = time % 60 < 10 ? '0' + (time % 60).ToString() : (time % 60).ToString();
+        var b = time / 60 < 10 ? '0' + (time / 60).ToString() : (time / 60).ToString();
+        string str =$"{b}:{a}";
         return str;
     }
 }

@@ -2,19 +2,12 @@ using System.Collections;
 using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEditor;
 using UnityEngine;
+using EnumData;
 /// <summary>
 /// 对齐类
 /// </summary>
 
-public enum UIAlignmentType
-{
-    Up,
-    Down,
-    Left,
-    Right,
-    UpDown,
-    LeftRight,
-}
+
 
 //[CustomEditor(typeof(RectTransform))]
 public class UIAlign : MonoBehaviour
@@ -43,7 +36,6 @@ public class UIAlign : MonoBehaviour
         }
         catch (System.Exception)
         {
-
             throw;
         }
     }
